@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Ember Espresso Blend — Ember & Oak</title>
+<meta name="description" content="Ember Espresso Blend: our house single-origin espresso, sourced from Yirgacheffe and Huila and roasted for a bright, structured shot." />
+<meta name="theme-color" content="#0e0b09" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,500;0,600;1,500&family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="../assets/css/tokens.css">
+<link rel="stylesheet" href="../assets/css/base.css">
+<link rel="stylesheet" href="../assets/css/layout.css">
+<link rel="stylesheet" href="../assets/css/components.css">
+<link rel="stylesheet" href="../assets/css/animations.css">
+</head>
+<body class="is-loading">
+<a href="#main-content" class="skip-link">Skip to content</a>
+
+<div id="preloader" aria-hidden="true">
+  <div class="preloader-mark"><span class="brew-ring"></span> Ember & Oak</div>
+</div>
+
+<div id="page-transition" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+<div id="scroll-progress"></div>
+
+<header id="siteHeader">
+  <div class="container">
+    <nav aria-label="Primary">
+      <a href="../index.html" class="logo">Ember<span>&</span>Oak</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="../about.html" data-nav>About</a></li>
+        <li><a href="../skills.html" data-nav>Craft</a></li>
+        <li><a href="../projects.html" data-nav>Menu</a></li>
+        <li><a href="../experience.html" data-nav>Experience</a></li>
+        <li><a href="../services.html" data-nav>Services</a></li>
+        <li><a href="../contact.html" data-nav>Visit Us</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="../contact.html" class="btn btn-ghost" data-hover data-magnetic>Reserve a Table</a>
+        <div class="burger" id="burger" aria-label="Open menu" aria-expanded="false"><span></span><span></span><span></span></div>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main id="main-content">
+  <section class="case-hero">
+    <div class="container">
+      <a href="../projects.html" class="case-back reveal">← Back to menu</a>
+      <div class="kicker reveal">Espresso · Single-Origin</div>
+      <h1 class="section-title reveal">Ember Espresso Blend</h1>
+      <p class="text-lede reveal" style="margin-top:18px;">A Yirgacheffe and Huila blend, roasted for a bright, structured shot with a long, syrupy finish — our house standard since year one.</p>
+
+      <div class="case-meta-row reveal">
+        <div class="case-meta-item"><span>Origins Blended</span><b class="num-mono" data-count="2">0</b></div>
+        <div class="case-meta-item"><span>Roast Level</span><b>Medium</b></div>
+        <div class="case-meta-item"><span>Extraction</span><b>27–30s</b></div>
+        <div class="case-meta-item"><span>Serving</span><b>Double Shot</b></div>
+      </div>
+
+      <div class="case-hero-media glass reveal mock-espresso">
+        <div class="device-frame">
+          <div class="device-bar"><span></span><span></span><span></span></div>
+          <div class="device-stage"><div class="brew-ring"></div></div>
+        </div>
+        <div class="preview-tag">Concept preview — not literal photography</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="case-body">
+    <div class="container case-layout">
+      <nav class="case-toc reveal" aria-label="On this page">
+        <a href="#problem">The Problem</a>
+        <a href="#approach">The Approach</a>
+        <a href="#features">Tasting Notes</a>
+        <a href="#stack">Sourcing</a>
+        <a href="#status">Availability</a>
+      </nav>
+
+      <div class="case-content reveal">
+        <h3 id="problem">The Problem</h3>
+        <p>Most house espresso blends are built to taste the same every time — which usually means a dark roast that hides the beans rather than showcasing them, and a shot that's the same regardless of what the beans actually need that day.</p>
+
+        <h3 id="approach">The Approach</h3>
+        <p>Ember Espresso Blend pairs a washed Yirgacheffe for brightness with a Huila for body, roasted just past first crack to keep the fruit notes intact without the harshness of a lighter roast in milk drinks. Extraction is dialed in every morning, not left on a fixed recipe.</p>
+        <p>The blend ratio shifts slightly by season as the two origins' harvests come in, so what's on bar in March isn't chemically identical to October — but the tasting profile stays consistent.</p>
+
+        <h3 id="features">Tasting Notes</h3>
+        <ul>
+          <li>Bright citrus and stone fruit up front from the Yirgacheffe</li>
+          <li>Brown sugar and cocoa body from the Huila underneath</li>
+          <li>Long, syrupy finish that holds up well in milk</li>
+          <li>Consistent, dialed-in extraction rather than a fixed recipe</li>
+        </ul>
+
+        <h3 id="stack">Sourcing</h3>
+        <p>Both origins come through direct-trade relationships with the same two farms every harvest — no spot-market swaps when prices move.</p>
+
+        <h3 id="status">Availability</h3>
+        <p>On bar every day, as espresso, americano, or the base for any milk drink on the menu.</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="case-nav">
+        <a href="cold-brew.html" class="glass" data-hover><span>← Previous</span><b>Golden Hour Cold Brew</b></a>
+        <a href="somgool.html" class="glass" data-hover><span>Next →</span><b>Oak & Honey Latte</b></a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container footer-row">
+    <p>© <span id="year"></span> Ember & Oak Coffee Co.</p>
+    <p><a href="../index.html" data-hover>← Back to home</a></p>
+  </div>
+</footer>
+
+<button id="back-to-top" aria-label="Back to top">
+  <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+</button>
+<div class="copy-toast" id="copyToast">✓ Copied to clipboard</div>
+
+<script type="module" src="../assets/js/main.js"></script>
+</body>
+</html>
