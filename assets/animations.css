@@ -1,0 +1,43 @@
+/* ==========================================================================
+   ANIMATIONS
+   ========================================================================== */
+
+.reveal{
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity var(--dur-slow) var(--ease-premium), transform var(--dur-slow) var(--ease-premium);
+}
+.reveal.is-visible{ opacity: 1; transform: translateY(0); }
+
+/* Staggered children reveal (grids/lists marked with data-stagger) */
+[data-stagger] > *{
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity var(--dur-med) var(--ease-premium), transform var(--dur-med) var(--ease-premium);
+}
+[data-stagger].is-visible > *{ opacity: 1; transform: translateY(0); }
+
+/* Preloader */
+#preloader{
+  position: fixed; inset: 0;
+  background: var(--bg);
+  z-index: 999;
+  display: flex; align-items: center; justify-content: center;
+  transition: opacity var(--dur-slow) var(--ease-premium), visibility var(--dur-slow) var(--ease-premium);
+}
+#preloader.is-hidden{ opacity: 0; visibility: hidden; pointer-events: none; }
+.preloader-mark{
+  font-family: var(--font-display);
+  font-size: var(--fs-lg);
+  color: var(--text);
+  display: flex; align-items: center; gap: var(--sp-3);
+}
+.preloader-mark .brew-ring{ width: 26px; height: 26px; }
+
+body.is-loading{ overflow: hidden; }
+
+/* Magnetic buttons (transform driven by JS) */
+[data-magnetic]{ display: inline-flex; }
+
+/* Tilt cards (perspective driven by JS) */
+[data-tilt]{ transform-style: preserve-3d; will-change: transform; }
