@@ -1,0 +1,94 @@
+/* ==========================================================================
+   EMBER & OAK — DESIGN TOKENS
+   Signature: the "roast stamp" — a circular, rotating provenance mark used
+   throughout as the badge/tag motif instead of generic pills. It's the one
+   recurring device that ties sourcing, craft and menu content together.
+   ========================================================================== */
+
+:root{
+
+  /* ---- Color: warm espresso dark, not pure black; duotone gold→ember,
+     sage as a quiet secondary for "organic/sourced" callouts ---- */
+  --bg:            #0e0b09;
+  --bg-alt:        #161009;
+  --bg-elevated:   #1c1410;
+  --surface:       rgba(255, 244, 227, 0.045);
+  --surface-strong:rgba(255, 244, 227, 0.08);
+  --border-hair:   rgba(255, 244, 227, 0.10);
+
+  --text:          #f4ecdf;
+  --text-muted:    #c9baa4;
+  --text-faint:    #8a7c68;
+
+  --gold:          #d8ab64;
+  --ember:         #e2703c;
+  --gold-ember:    linear-gradient(120deg, var(--gold), var(--ember));
+  --sage:          #7c9271;
+  --sage-dim:      #4f5c47;
+
+  --danger:        #d9694f;
+  --success:       #7c9271;
+
+  /* ---- Typography ---- */
+  --font-display:  'Fraunces', 'Georgia', serif;
+  --font-body:     'Inter', system-ui, sans-serif;
+  --font-mono:     'JetBrains Mono', monospace;
+
+  --fs-xs:   clamp(0.72rem, 0.7rem + 0.1vw, 0.8rem);
+  --fs-sm:   clamp(0.85rem, 0.82rem + 0.15vw, 0.95rem);
+  --fs-base: clamp(1rem, 0.96rem + 0.2vw, 1.08rem);
+  --fs-md:   clamp(1.15rem, 1.08rem + 0.35vw, 1.35rem);
+  --fs-lg:   clamp(1.5rem, 1.3rem + 0.9vw, 2rem);
+  --fs-xl:   clamp(2.1rem, 1.7rem + 1.8vw, 3.2rem);
+  --fs-2xl:  clamp(2.8rem, 2.1rem + 3.2vw, 4.8rem);
+  --fs-3xl:  clamp(3.4rem, 2.4rem + 4.6vw, 6.4rem);
+
+  --lh-tight: 1.08;
+  --lh-snug:  1.3;
+  --lh-body:  1.65;
+
+  --tracking-tight: -0.02em;
+  --tracking-wide:  0.14em;
+
+  /* ---- Spacing (8px base scale) ---- */
+  --sp-1: 0.5rem;
+  --sp-2: 0.75rem;
+  --sp-3: 1rem;
+  --sp-4: 1.5rem;
+  --sp-5: 2rem;
+  --sp-6: 3rem;
+  --sp-7: 4.5rem;
+  --sp-8: 6.5rem;
+  --sp-9: 9rem;
+
+  /* ---- Radius ---- */
+  --r-sm:   8px;
+  --r-md:   14px;
+  --r-lg:   22px;
+  --r-pill: 999px;
+
+  /* ---- Shadow (layered: ambient + key) ---- */
+  --shadow-sm: 0 1px 2px rgba(0,0,0,.35);
+  --shadow-md: 0 8px 24px -8px rgba(0,0,0,.5), 0 2px 6px rgba(0,0,0,.35);
+  --shadow-lg: 0 24px 60px -20px rgba(0,0,0,.6), 0 6px 18px rgba(0,0,0,.35);
+  --shadow-glow: 0 0 0 1px rgba(216,171,100,.18), 0 12px 40px -12px rgba(226,112,60,.25);
+
+  /* ---- Motion ---- */
+  --ease-premium: cubic-bezier(.16,.84,.44,1);
+  --ease-out:     cubic-bezier(.22,.61,.36,1);
+  --dur-fast:  180ms;
+  --dur-med:   420ms;
+  --dur-slow:  760ms;
+
+  /* ---- Layout ---- */
+  --container-w: min(1180px, 92vw);
+  --header-h: 84px;
+  --z-header: 100;
+  --z-cursor: 200;
+  --z-overlay: 300;
+  --z-toast: 400;
+}
+
+@media (min-width: 840px){
+  :root{ --header-h: 92px; }
+}
